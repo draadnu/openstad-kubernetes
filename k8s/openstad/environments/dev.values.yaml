@@ -1,0 +1,59 @@
+# Optional Dependencies
+
+##
+## In this block you can toggle all optional dependencies.
+## If you want to use an existing database(s) or services, disable
+## the chart database(s) here.
+##
+## - To enable a dependency, set the enabled value of the relevant
+##   dependency to true.
+##
+## - To disable a dependency, set the enabled value of the relevant
+##   dependency to false.
+##
+## Note: If you use an existing database, please change the
+##      relevant credentials in secrets.database for MySQL and/or
+##      secrets.mongodb for MongoDB
+##
+
+dependencies:
+  ## Database
+  mongodb:
+    enabled: true
+  mysql:
+    enabled: true
+  ## SSL
+  cert-manager:
+    enabled: true
+
+# Internal config
+public:
+  name: openstad
+
+cert-manager:
+  # Whether we want to install CRDs.
+  installCRDs: true
+
+frontend:
+  deploymentContainer:
+    image: openstad/frontend:v0.8.1
+
+adminer:
+  deploymentContainer:
+    image: adminer
+
+auth:
+  deploymentContainer:
+    image: openstad/auth:v0.8.0
+
+admin:
+  deploymentContainer:
+    image: openstad/admin:v0.7.4
+
+api:
+  deploymentContainer:
+    image: draadnl/openstad-api:release-pz-1.2
+
+image:
+  deploymentContainer:
+    image: openstad/image:v0.7.0

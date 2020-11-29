@@ -37,6 +37,15 @@ cert-manager:
 frontend:
   deploymentContainer:
     image: openstad/frontend:v0.8.1
+  resources:
+    # Max resources
+    limits:
+      cpu: 2
+      memory: 2Gi
+    # Min resources
+    requests:
+      cpu: 100m
+      memory: 500M
 
 adminer:
   deploymentContainer:
@@ -52,7 +61,7 @@ admin:
 
 api:
   deploymentContainer:
-    image: draadnl/openstad-api:release-pz-1.2
+    image: openstad/api:v0.8.0
 
 image:
   deploymentContainer:

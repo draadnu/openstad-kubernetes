@@ -24,7 +24,7 @@ dependencies:
     enabled: true
   ## SSL
   cert-manager:
-    enabled: true
+    enabled: false
 
 # Internal config
 public:
@@ -32,10 +32,10 @@ public:
 
 cert-manager:
   # Whether we want to install CRDs.
-  installCRDs: true
+  installCRDs: false
 
 clusterIssuer:
-  enabled: true
+  enabled: false
   
 frontend:
   deploymentContainer:
@@ -64,7 +64,7 @@ admin:
 
 api:
   deploymentContainer:
-    image: openstad/api:v0.8.0
+    image: draadnl/openstad-api:release-pzh-1.2
 
 image:
   deploymentContainer:

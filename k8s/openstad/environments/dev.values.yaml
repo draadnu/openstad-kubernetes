@@ -35,7 +35,7 @@ clusterIssuer:
   enabled: false
 frontend:
   deploymentContainer:
-    image: openstad/frontend:749324236
+    image: openstad/frontend:749330847
   resources:
     # Max resources
     limits:

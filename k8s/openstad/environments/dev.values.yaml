@@ -25,21 +25,17 @@ dependencies:
   ## SSL
   cert-manager:
     enabled: false
-
 # Internal config
 public:
   name: openstad
-
 cert-manager:
   # Whether we want to install CRDs.
   installCRDs: false
-
 clusterIssuer:
   enabled: false
-  
 frontend:
   deploymentContainer:
-    image: openstad/frontend:v0.8.1
+    image: draadnl/openstad-frontend:a11y-improvements-1.1
   resources:
     # Max resources
     limits:
@@ -49,23 +45,18 @@ frontend:
     requests:
       cpu: 100m
       memory: 500M
-
 adminer:
   deploymentContainer:
     image: adminer
-
 auth:
   deploymentContainer:
     image: openstad/auth:v0.8.0
-
 admin:
   deploymentContainer:
     image: openstad/admin:v0.7.4
-
 api:
   deploymentContainer:
     image: draadnl/openstad-api:release-pzh-1.2
-
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0

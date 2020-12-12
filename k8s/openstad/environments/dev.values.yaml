@@ -35,7 +35,7 @@ clusterIssuer:
   enabled: false
 frontend:
   deploymentContainer:
-    image: draadnl/openstad-frontend:a11y-improvements-1.1
+    image: draadnl/openstad-frontend:a11y-improvements-1.0
   resources:
     # Max resources
     limits:

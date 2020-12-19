@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: openstad/frontend:v0.10.1
+    image: draadnl/openstad-frontend:750592168
 auth:
   deploymentContainer:
     image: openstad/auth:v0.10.0
@@ -13,4 +13,3 @@ api:
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0
-

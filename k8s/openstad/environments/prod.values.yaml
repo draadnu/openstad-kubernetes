@@ -3,10 +3,10 @@ frontend:
     image: draadnl/openstad-frontend:draad-v0.10.2
 auth:
   deploymentContainer:
-    image: draadnl/openstad-auth:v0.8.1.2-dev
+    image: openstad/auth:v0.10.0
 admin:
   deploymentContainer:
-    image: openstad/admin:v0.7.4
+    image: openstad/admin:v0.10.2
 api:
   deploymentContainer:
     image: draadnl/openstad-api:release-pzh-1.2

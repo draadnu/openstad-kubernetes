@@ -77,7 +77,7 @@ spec:
       initContainers:
       - name: volume-mount-fix
         image: busybox
-        command: [ "sh", "-c", "chown -R node:node /app/images" ]
+        command: [ "sh", "-c", "chown -R 1000:1000 /app/images" ]
         volumeMounts:
           - name: data-vol
             mountPath: /app/images

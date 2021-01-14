@@ -34,6 +34,8 @@ metadata:
     # job is considered part of the release.
     "helm.sh/hook": pre-install
     "helm.sh/hook-weight": "30"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    "argocd.argoproj.io/hook-delete-policy": HookSucceeded
 roleRef:
   apiGroup: ''
   kind: Role

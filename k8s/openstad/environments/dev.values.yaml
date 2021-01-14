@@ -9,7 +9,7 @@ admin:
     image: openstad/admin:v0.10.2
 api:
   deploymentContainer:
-    image: openstad/api:v0.10.0
+    image: draadnl/openstad-api:release-demo-hotfix-auth-and-user-form-1.0
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0

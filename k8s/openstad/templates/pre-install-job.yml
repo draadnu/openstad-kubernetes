@@ -56,6 +56,7 @@ metadata:
     "helm.sh/hook-weight": "-2"
     "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
 spec:
+  ttlSecondsAfterFinished: 600
   template:
     metadata:
       namespace: {{ .Release.Namespace }}

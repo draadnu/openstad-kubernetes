@@ -44,6 +44,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: openstad-secrets-sa
+    namespace: {{ .Release.Namespace }}
 ---
 apiVersion: batch/v1
 kind: Job

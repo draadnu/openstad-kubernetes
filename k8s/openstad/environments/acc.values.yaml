@@ -1,0 +1,15 @@
+frontend:
+  deploymentContainer:
+    image: draadnl/openstad-frontend:754440268
+auth:
+  deploymentContainer:
+    image: openstad/auth:v0.10.0
+admin:
+  deploymentContainer:
+    image: openstad/admin:v0.10.2
+api:
+  deploymentContainer:
+    image: draadnl/openstad-api:release-demo-hotfix-auth-and-user-form-1.1
+image:
+  deploymentContainer:
+    image: openstad/image:v0.7.0

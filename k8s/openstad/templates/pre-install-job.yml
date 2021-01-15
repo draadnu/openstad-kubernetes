@@ -57,6 +57,7 @@ metadata:
 spec:
   template:
     metadata:
+      namespace: {{ .Release.Namespace }}
       name: "{{ .Release.Name }}-batch"
     spec:
       serviceAccountName: openstad-secrets-sa

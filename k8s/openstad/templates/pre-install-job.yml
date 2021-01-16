@@ -19,6 +19,7 @@ metadata:
     # job is considered part of the release.
     "helm.sh/hook": pre-install
     "helm.sh/hook-weight": "-4"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
 rules:
   - apiGroups: ['']
     resources: ['secrets']

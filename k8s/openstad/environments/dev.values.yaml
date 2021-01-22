@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: draadnl/openstad-frontend:755673327
+    image: draadnl/openstad-frontend:feature-github-workflow-8d9a1f4-503628237
 auth:
   deploymentContainer:
     image: openstad/auth:v0.10.0

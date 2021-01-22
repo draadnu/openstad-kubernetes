@@ -6,7 +6,7 @@ auth:
     image: openstad/auth:v0.10.0
 admin:
   deploymentContainer:
-    image: openstad/admin:v0.10.2
+    image: stijnvdvegt/openstad-oauth2-server:feature-test-rc1-21fbe51-503978246
 api:
   deploymentContainer:
     image: openstad/api:v0.11.0

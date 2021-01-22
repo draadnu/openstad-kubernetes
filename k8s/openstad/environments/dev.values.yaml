@@ -6,7 +6,7 @@ auth:
     image: openstad/auth:v0.10.0
 admin:
   deploymentContainer:
-    image: openstad/admin:v0.10.2
+    image: draadnl/openstad-admin:feature-gitops-workflow-e837e57-503718897
 api:
   deploymentContainer:
     image: draadnl/openstad-api:754608218

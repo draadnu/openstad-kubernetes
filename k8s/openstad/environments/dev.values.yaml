@@ -9,7 +9,7 @@ admin:
     image: draadnl/openstad-management-panel:feature-gitops-workflow-32b655f-503729968
 api:
   deploymentContainer:
-    image: draadnl/openstad-api:feature-gitops-workflow-56e48d6-508792709
+    image: draadnl/openstad-api:feature-gitops-workflow-b076584-508792344
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0

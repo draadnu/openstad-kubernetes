@@ -1,15 +1,15 @@
 frontend:
   deploymentContainer:
-    image: openstad/frontend:v0.12.0
+    image: draadnl/openstad-frontend:feature-test-rc1-ef4875f-514441841
 auth:
   deploymentContainer:
-    image: openstad/auth:v0.11.0
+    image: draadnl/openstad-oauth2-server:feature-test-rc1-40e7cf9-504475484
 admin:
   deploymentContainer:
-    image: openstad/admin:v0.10.2
+    image: draadnl/openstad-management-panel:feature-gitops-workflow-32b655f-503729968
 api:
   deploymentContainer:
-    image: openstad/api:v0.11.0
+    image: draadnl/openstad-api:feature-gitops-workflow-b076584-508792344
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0

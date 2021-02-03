@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: draadnl/openstad-frontend:release-0.13.0-beta-0c1728b-534042895
+    image: draadnl/openstad-frontend:release-0.13.0-beta-81f5698-534053447
 auth:
   deploymentContainer:
     image: openstad/auth:v0.10.0

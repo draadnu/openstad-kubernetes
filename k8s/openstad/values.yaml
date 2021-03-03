@@ -129,7 +129,7 @@ frontend:
   deploymentContainer:
     name: frontend
     # Docker image for this pod
-    image: openstad/frontend:v0.10.2 
+    image: openstad/frontend:v0.10.2
 
   # Subdomain for the service:
   # If filled it it will create a default url of: www.$subdomain.$baseurl
@@ -139,6 +139,8 @@ frontend:
   googleMapsApiKey:
 
   cookieMaxAge:
+
+  openstadComponentsUrl:
 
   # Ingress settings:
   # Configure how the service is accessed

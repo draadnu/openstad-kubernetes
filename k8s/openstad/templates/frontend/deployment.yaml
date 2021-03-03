@@ -48,6 +48,8 @@ spec:
               value: "{{ .Values.frontend.googleMapsApiKey }}"
             - name: COOKIE_MAX_AGE
               value: "{{ .Values.frontend.cookieMaxAge }}"
+            - name: OPENSTAD_COMPONENTS_URL
+              value: "{{ .Values.frontend.openstadComponentsUrl }}"
             - name: IMAGE_API_ACCESS_TOKEN
               valueFrom:
                 secretKeyRef:

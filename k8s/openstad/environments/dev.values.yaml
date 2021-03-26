@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: draadnl/openstad-frontend:feature-dockerfile-and-github-action-improvements-81c5107-690099252
+    image: draadnl/openstad-frontend:feature-dockerfile-and-github-action-improvements-a69ef27-690118942
 auth:
   deploymentContainer:
     image: draadnl/openstad-oauth2-server:feature-test-rc1-40e7cf9-504475484

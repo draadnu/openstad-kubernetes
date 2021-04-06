@@ -141,6 +141,8 @@ frontend:
 
   cookieMaxAge:
 
+  openstadComponentsUrl:
+
   # Ingress settings:
   # Configure how the service is accessed
   ingress:

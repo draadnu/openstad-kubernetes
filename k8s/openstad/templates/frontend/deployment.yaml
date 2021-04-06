@@ -40,10 +40,16 @@ spec:
               value: 'ON'
             - name: APOS_WORKFLOW
               value: 'ON'
+            - name: NODE_ENV
+              value: 'production'
+            - name: APOS_BUNDLE
+              value: 'assets'
             - name: GOOGLE_MAPS_API_KEY
               value: "{{ .Values.frontend.googleMapsApiKey }}"
             - name: COOKIE_MAX_AGE
               value: "{{ .Values.frontend.cookieMaxAge }}"
+            - name: OPENSTAD_COMPONENTS_URL
+              value: "{{ .Values.frontend.openstadComponentsUrl }}"
             - name: IMAGE_API_ACCESS_TOKEN
               valueFrom:
                 secretKeyRef:
@@ -87,10 +93,6 @@ spec:
                 fieldRef:
                   apiVersion: v1
                   fieldPath: status.podIP
-{{- if and .Values.frontend.ingress.enabled ((.Values.clusterIssuer.useProdIssuer | not) or (eq (index .Values.frontend.ingress.annotations "cert-manager.io/cluster-issuer") "letsencrypt-staging")) }}
-            - name: NODE_TLS_REJECT_UNAUTHORIZED
-              value: "0"
-{{- end }}
 
           resources:
 {{ toYaml .Values.frontend.resources | indent 12 }}

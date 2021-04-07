@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: opemstad/frontend:v0.15.0
+    image: openstad/frontend:v0.15.0
 auth:
   deploymentContainer:
     image: openstad/auth:v0.13.0

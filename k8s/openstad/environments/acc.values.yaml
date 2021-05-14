@@ -9,7 +9,7 @@ admin:
     image: openstad/admin:v0.14.0
 api:
   deploymentContainer:
-    image: draadnl/openstad-api:release-0.16.0-beta-5207d02-841525355
+    image: draadnl/openstad-api:release-0.16.0-beta-ce96060-841559151
 image:
   deploymentContainer:
     image: openstad/image:v0.7.0

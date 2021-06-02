@@ -6,7 +6,7 @@ auth:
     image: draadnl/openstad-oauth2-server:release-0.14.0-beta-b3a0f73-755364750
 admin:
   deploymentContainer:
-    image: openstad/admin:v0.14.0
+    image: draadnl/openstad-management-panel:feature-release-0.15.1.beta-1-235e874-898725261
 api:
   deploymentContainer:
     image: openstad/api:v0.14.0

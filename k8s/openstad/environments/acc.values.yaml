@@ -1,6 +1,6 @@
 frontend:
   deploymentContainer:
-    image: draadnl/openstad-frontend:release-kinderburgemeester-stemfase-685145a-946815595
+    image: draadnl/openstad-frontend:release-0.18.1-beta-54d5158-947454409
 auth:
   deploymentContainer:
     image: draadnl/openstad-oauth2-server:release-0.14.0-beta-b3a0f73-755364750

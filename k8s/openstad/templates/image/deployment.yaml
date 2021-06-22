@@ -21,6 +21,7 @@ spec:
 {{ toYaml .Values.image.podAnnotations | indent 8 }}
 {{- end }}
     spec:
+      {{- include "openstad.imagePullSecret" . | nindent 6 }}
       containers:
       - name: {{ template "openstad.image.fullname" . }}
         image: {{ .Values.image.deploymentContainer.image }}

@@ -23,6 +23,7 @@ spec:
 {{ toYaml .Values.frontend.podAnnotations | indent 8 }}
 {{- end }}
     spec:
+      {{- include "openstad.imagePullSecret" . | nindent 6 }}
       containers:
         - name: {{ template "openstad.frontend.fullname" . }}
           image: {{ .Values.frontend.deploymentContainer.image }}

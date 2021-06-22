@@ -19,6 +19,7 @@ spec:
       labels:
         app: {{ .Values.frontend.label }}
     spec:
+      {{- include "openstad.imagePullSecret" . | nindent 6 }}
       containers:
         - name: {{ template "openstad.frontend.fullname" . }}
           image: {{ .Values.frontend.deploymentContainer.image }}

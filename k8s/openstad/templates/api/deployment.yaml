@@ -19,6 +19,7 @@ spec:
         app: {{ .Values.api.label }}
     spec:
       serviceAccountName: openstad-ingress-sa
+      {{- include "openstad.imagePullSecret" . | nindent 6 }}
       containers:
         - env:
           - name: API_URL

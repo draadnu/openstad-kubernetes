@@ -17,6 +17,7 @@ spec:
       labels:
         app: {{ .Values.image.label }}
     spec:
+      {{- include "openstad.imagePullSecret" . | nindent 6 }}
       containers:
       - name: {{ template "openstad.image.fullname" . }}
         image: {{ .Values.image.deploymentContainer.image }}

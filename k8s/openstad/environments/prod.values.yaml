@@ -3,7 +3,7 @@ frontend:
     image: draadnl/openstad-frontend:release-0.13.0-beta-57a0daf-892374608
 auth:
   deploymentContainer:
-    image: draadnl/openstad-oauth2-server:feature-0.11-fix-double-email-3362160-810459769
+    image: draadnl/openstad-oauth2-server:feature-0.11-fix-double-email-2be696e-986713624
 admin:
   deploymentContainer:
     image: draadnl/openstad-management-panel:feature-gitops-workflow-310003d-527479285

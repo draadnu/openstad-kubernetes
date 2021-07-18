@@ -1,4 +1,5 @@
 ---
+{{- if .Values.adminer.enabled -}}
 {{- if .Values.adminer.ingress.enabled -}}
 {{ $serviceName := include "openstad.adminer.fullname" . }}
 {{ $servicePort := .Values.adminer.service.httpPort }}
@@ -24,7 +25,7 @@ metadata:
 
   name: {{ template "openstad.adminer.fullname" . }}
   namespace: {{ .Release.Namespace }}
-  
+
 spec:
   rules:
 {{- range $host := .Values.adminer.ingress.hosts }}
@@ -50,4 +51,5 @@ spec:
         - {{ $value }}
   {{- end -}}
 
+{{- end -}}
 {{- end -}}

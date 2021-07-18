@@ -1,5 +1,4 @@
 ---
-{{- if .Values.adminer.enabled -}}
 {{- if .Values.adminer.ingress.enabled -}}
 {{ $serviceName := include "openstad.adminer.fullname" . }}
 {{ $servicePort := .Values.adminer.service.httpPort }}
@@ -42,7 +41,7 @@ spec:
           - backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
-              
+
   tls:
     - secretName: {{ .Values.adminer.ingress.tls.secretName }}
       hosts:
@@ -51,5 +50,4 @@ spec:
         - {{ $value }}
   {{- end -}}
 
-{{- end -}}
 {{- end -}}

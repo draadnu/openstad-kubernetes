@@ -203,6 +203,7 @@ S3:
 
 ## Settings for Adminer
 adminer:
+  enabled: true
   # Configure how many replicas exists of this service
   replicas: 1
 
